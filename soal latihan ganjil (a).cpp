@@ -36,3 +36,9 @@ public:
     // Friend function agar Universitas bisa akses gaji Dosen
     friend double lihatGajiDosen(Dosen *d);
 };
+
+// Fungsi friend untuk mengubah nilai Mahasiswa
+void beriNilai(Mahasiswa *m, float nilaiBaru)
+{
+    m->nilai = nilaiBaru;
+}
