@@ -42,3 +42,9 @@ void beriNilai(Mahasiswa *m, float nilaiBaru)
 {
     m->nilai = nilaiBaru;
 }
+
+// Fungsi friend untuk mengubah pangkat Dosen oleh Staff
+void ubahPangkat(Dosen *d, string pangkatBaru)
+{
+    d->pangkat = pangkatBaru;
+}
