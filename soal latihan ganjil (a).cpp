@@ -18,3 +18,21 @@ public:
     // Friend function spesifik untuk beriNilai
     friend void beriNilai(Mahasiswa *m, float nilaiBaru);
 };
+
+class Dosen
+{
+private:
+    string nama;
+    string NIDN;
+    string pangkat;
+    double gaji;
+
+public:
+    Dosen(string n, string nidn, string p, double g) : nama(n), NIDN(nidn), pangkat(p), gaji(g) {}
+
+    // Friend function agar Staff bisa ubah pangkat Dosen
+    friend void ubahPangkat(Dosen *d, string pangkatBaru);
+
+    // Friend function agar Universitas bisa akses gaji Dosen
+    friend double lihatGajiDosen(Dosen *d);
+};
