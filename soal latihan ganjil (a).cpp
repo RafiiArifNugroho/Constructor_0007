@@ -48,3 +48,9 @@ void ubahPangkat(Dosen *d, string pangkatBaru)
 {
     d->pangkat = pangkatBaru;
 }
+
+// Fungsi friend untuk mengakses gaji Dosen
+double lihatGajiDosen(Dosen *d)
+{
+    return d->gaji;
+}
