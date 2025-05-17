@@ -83,3 +83,27 @@ public:
         cout << "Gaji Staff: " << lihatGajiStaff(s) << endl;
     }
 };
+
+int main()
+{
+    Mahasiswa mhs("Budi", "12345", 80);
+    Dosen dsn("Pak Joko", "N123", "Lektor", 10000000);
+    Staff stf("Bu Siti", "S001", 5000000);
+
+    cout << "== Sebelum perubahan ==" << endl;
+    Universitas univ;
+    univ.infoGaji(&dsn, &stf);
+
+    cout << "\n== Perubahan nilai Mahasiswa ==" << endl;
+    beriNilai(&mhs, 95);
+    cout << "Nilai Mahasiswa berhasil diubah oleh Dosen ke 95 (tidak bisa ditampilkan langsung karena private)\n";
+
+    cout << "\n== Perubahan pangkat Dosen oleh Staff ==" << endl;
+    ubahPangkat(&dsn, "Guru Besar");
+    cout << "Pangkat Dosen berhasil diubah menjadi Guru Besar (tidak bisa ditampilkan langsung karena private)\n";
+
+    cout << "\n== Sesudah perubahan ==" << endl;
+    univ.infoGaji(&dsn, &stf);
+
+    return 0;
+}
