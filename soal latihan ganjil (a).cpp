@@ -54,3 +54,17 @@ double lihatGajiDosen(Dosen *d)
 {
     return d->gaji;
 }
+
+class Staff
+{
+private:
+    string nama;
+    string idStaff;
+    double gaji;
+
+public:
+    Staff(string n, string id, double g) : nama(n), idStaff(id), gaji(g) {}
+
+    // Friend function agar Universitas bisa akses gaji Staff
+    friend double lihatGajiStaff(Staff *s);
+};
