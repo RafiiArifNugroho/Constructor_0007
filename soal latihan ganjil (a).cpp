@@ -68,3 +68,18 @@ public:
     // Friend function agar Universitas bisa akses gaji Staff
     friend double lihatGajiStaff(Staff *s);
 };
+
+double lihatGajiStaff(Staff *s)
+{
+    return s->gaji;
+}
+
+class Universitas
+{
+public:
+    void infoGaji(Dosen *d, Staff *s)
+    {
+        cout << "Gaji Dosen: " << lihatGajiDosen(d) << endl;
+        cout << "Gaji Staff: " << lihatGajiStaff(s) << endl;
+    }
+};
