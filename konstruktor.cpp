@@ -15,3 +15,9 @@ public:
     mahasiswa(int, iNim, string iNama);
     void cetak();
 };
+
+mahasiswa ::mahasiswa(int iNim)
+{
+    nim = 0;
+    nama = "";
+}
