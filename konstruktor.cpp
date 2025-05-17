@@ -31,3 +31,15 @@ mahasiswa ::mahasiswa(string iNama)
 {
     nama = iNim;
 }
+
+mahasiswa :: mahasiswa9int iNim, string iNama)
+{
+    nim = iNim;
+    nama = iNama;
+}
+void mahasiswa::cetak()
+{
+    cout << endl
+         << "Nim =" << nim << endl;
+    cout << "Nama = " << nama << endl;
+}
